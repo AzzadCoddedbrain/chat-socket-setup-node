@@ -8,13 +8,12 @@ const socketio = require('socket.io')
 const io = socketio(server);
 
 var PORT = process.env.PORT || 3000;
-
-
 server.listen(PORT, function() {
     console.log('Listening to PORTv ' + PORT );
 });
 
-
+var ip = require("ip");
+console.log("Local IP Address  -> "+ip.address()+":"+PORT);
 //chatRoom
 var numUsers = 0;
 
