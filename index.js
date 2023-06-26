@@ -13,7 +13,7 @@ server.listen(PORT, function() {
 });
 
 var ip = require("ip");
-console.log("Local IP Address  -> "+ip.address()+":"+PORT);
+console.log("IPv4 ip address  -> "+ip.address()+":"+PORT);
 //chatRoom
 var numUsers = 0;
 
